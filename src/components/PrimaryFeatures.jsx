@@ -3,6 +3,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDebouncedCallback } from 'use-debounce'
+import Image from 'next/image';
 
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
@@ -210,7 +211,7 @@ function StocksScreen({ custom, animated = false }) {
       <MotionAppScreenBody {...(animated ? { ...bodyAnimation, custom } : {})}>
         
         <div className="h-full divide-y divide-gray-100 flex justify-center items-center">
-          <img src={'/images/sec.png'} width={500} height={300} alt="Stock Logo" />
+          <Image src={'/images/sec.png'} width={500} height={300} alt="Stock Logo" />
         </div>
       </MotionAppScreenBody>
     </AppScreen>
@@ -468,7 +469,7 @@ export function PrimaryFeatures() {
          PepeChat - A new paradigm
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-          PepeChat leverages the power of decentralization and advanced cryptographic techniques to ensure a fair and unbiased platform for all. Here's how:
+          PepeChat leverages the power of decentralization and advanced cryptographic techniques to ensure a fair and unbiased platform for all. Here&apos;s how:
           </p>
         </div>
       </Container>
